@@ -1,4 +1,7 @@
 import sys
+import os
+import cv2 as cv
+import numpy as np
 
 from resources.homeBrew import *
 
@@ -9,7 +12,7 @@ fileDir = os.path.dirname(os.path.realpath('__file__'))
 relPath = "./img/"
 path = os.path.normpath(os.path.join(fileDir, relPath))
 
-print("\n__--I am located at: ", fileDir, "--__")
+print("\n__--I am located at: ", path, "--__")
 
 # import all images from img folder.
 img = loadImages(path)  # loading all images from ./img/ folder (.jpg, .jpeg, .png)
@@ -18,7 +21,6 @@ if img is None:
     sys.exit("Could not read the image.")
 
 #color3dPlot(img[0])
-
 cv.imshow("Display window", img[0])
 k = cv.waitKey(0)
 
