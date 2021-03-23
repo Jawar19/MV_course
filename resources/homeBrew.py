@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def loadImages(path) -> cv.UMat:
+def loadImages(path):
     ext = ['png', 'jpg', 'jpeg']  # image format extensions
     files = []  # empty array for file paths to images
     [files.extend(glob.glob(path + '/*.' + e)) for e in ext]
@@ -41,7 +41,7 @@ def babyFood(path):
     cv.destroyAllWindows()
 
 
-def rgb3dPlot(img) -> cv.UMat:
+def rgb3dPlot(img):
     img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
     r, g, b = cv.split(img)
     fig = plt.figure()
@@ -58,7 +58,7 @@ def rgb3dPlot(img) -> cv.UMat:
     plt.show()
 
 
-def hsv3dplot(inImg) -> cv.UMat:
+def hsv3dplot(inImg):
     hsvImg = inImg
     h, s, v = cv.split(hsvImg)
     fig = plt.figure()

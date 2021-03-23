@@ -20,10 +20,12 @@ img = loadImages(path)  # loading all images from ./img/ folder (.jpg, .jpeg, .p
 if img is None:
     sys.exit("Could not read the image.")
 
-#color3dPlot(img[0])
+# color3dPlot(img[0])
 cv.imshow("Display window", img[0])
 k = cv.waitKey(0)
 
 babyFood(path)
 
-
+# tutorial in webcam stream and face detection
+# TODO: Linea kig her for webcam stream
+## https://realpython.com/face-detection-in-python-using-a-webcam/
