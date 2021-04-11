@@ -23,12 +23,14 @@ if opg == 1:
 
     # TODO: indlæs billede fra mappen "img/BabyFood/" og vis dette i et "named window"
     #   HINT: imread() og imshow()
+    #   https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_gui/py_image_display/py_image_display.html#display-image
 
 
     cv.waitKey(0)
 
     # TODO: segmenter billedet fra "img/BabyFood" så kun de røde skeer vises.
     #   HINT: brug forloop og if-statements
+    #   https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_colorspaces/py_colorspaces.html
 
 
     cv.waitKey(0)
