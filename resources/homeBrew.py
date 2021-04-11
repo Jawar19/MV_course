@@ -23,7 +23,7 @@ def babyFood(path):
         return
     cv.imshow("Babyfood", imgBaby[2])
     cv.waitKey(100)
-
+    #
     hsv_img = cv.cvtColor(imgBaby[2], cv.COLOR_BGR2HSV)
     #cv.imshow("Babytest", hsv_img)
 
