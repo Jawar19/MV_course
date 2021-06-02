@@ -23,7 +23,7 @@ if opg == 1:
 
     # TODO: indlæs billede fra mappen "img/BabyFood/" og vis dette i et "named window"
     #   HINT: imread() og imshow()
-    #   https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_gui/py_image_display/py_image_display.html#display-image
+    #   https://docs.opencv.org/master/db/deb/tutorial_display_image.html
     #   https://docs.opencv.org/master/d5/d98/tutorial_mat_operations.html
 
 
